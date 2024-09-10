@@ -1,0 +1,47 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:rgba(0, 0, 0, 0.801);
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cursor{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    font-size: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+#image{
+    height: auto;
+    width: auto;
+    position: relative;
+}
+#image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 10;
+}
